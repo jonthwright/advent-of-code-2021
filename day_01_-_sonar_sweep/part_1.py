@@ -3,8 +3,7 @@
 def solution(elements):
     measurements_inc = 0
     for i in range(len(elements)):
-        if elements[i] > elements[i - 1]:
-            measurements_inc += 1
+        measurements_inc += elements[i] > elements[i - 1]
     return measurements_inc
         
 

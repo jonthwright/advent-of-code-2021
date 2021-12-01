@@ -3,8 +3,7 @@
 def solution(elements):
     measurements_inc = 0
     for i in range(len(elements)):
-        if sum(elements[i + 1: i + 4]) > sum(elements[i: i + 3]):
-            measurements_inc += 1
+        measurements_inc += sum(elements[i + 1: i + 4]) > sum(elements[i: i + 3])
     return measurements_inc
         
 
