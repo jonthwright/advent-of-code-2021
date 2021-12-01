@@ -2,7 +2,6 @@
 
 def solution(elements):
     pass
-        
 
 if __name__ == '__main__':
 	with open('input_file.txt', 'r') as f:

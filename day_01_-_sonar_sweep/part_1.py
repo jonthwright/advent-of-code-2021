@@ -4,8 +4,7 @@ def solution(elements):
     measurements_inc = 0
     for i in range(len(elements)):
         measurements_inc += elements[i] > elements[i - 1]
-    return measurements_inc
-        
+    return measurements_inc     
 
 if __name__ == '__main__':
 	with open('input_file.txt', 'r') as f:
