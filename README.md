@@ -9,7 +9,7 @@ Coded primarily in Python.
 | :-----: | :----: | :----: | :----: |
 | **1**  | [*Sonar Sweep*](https://adventofcode.com/2021/day/1) | [Click here](./day_01_-_sonar_sweep/part_1.py) | [Click here](./day_01_-_sonar_sweep/part_2.py) |
 | **2**  | [](https://adventofcode.com/2021/day/2) | [Click here]() | [Click here]() |
-| **3**  | [](https://adventofcode.com/2021/day/3) | [Click here]() | [Click here]() |
+<!--| **3**  | [](https://adventofcode.com/2021/day/3) | [Click here]() | [Click here]() |
 | **4**  | [](https://adventofcode.com/2021/day/4) | [Click here]() | [Click here]() |
 | **5**  | [](https://adventofcode.com/2021/day/5) | [Click here]() | [Click here]() |
 | **6**  | [](https://adventofcode.com/2021/day/6) | [Click here]() | [Click here]() |
@@ -31,7 +31,7 @@ Coded primarily in Python.
 | **22** | [](https://adventofcode.com/2021/day/22) | [Click here]() | [Click here]() |
 | **23** | [](https://adventofcode.com/2021/day/23) | [Click here]() | [Click here]() |
 | **24** | [](https://adventofcode.com/2021/day/24) | [Click here]() | [Click here]() |
-| **25 (final)** | [](https://adventofcode.com/2021/day/25) | [Click here]() | __*(None)*__ |
+| **25 (final)** | [](https://adventofcode.com/2021/day/25) | [Click here]() | __*(None)*__ |-->
 
 # Map
 ![](./map.png?raw=true)
