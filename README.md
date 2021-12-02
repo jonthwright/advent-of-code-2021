@@ -3,12 +3,12 @@ Advent of Code 2021.
 
 Coded primarily in Python.
 
-# Quick links to Solutions
+# Links to Solutions
 
 | *Day #* | Puzzle | Part 1 | Part 2 |
 | :-----: | :----: | :----: | :----: |
 | **1**  | [*Sonar Sweep*](https://adventofcode.com/2021/day/1) | [Click here](./day_01_-_sonar_sweep/part_1.py) | [Click here](./day_01_-_sonar_sweep/part_2.py) |
-| **2**  | [](https://adventofcode.com/2021/day/2) | [Click here]() | [Click here]() |
+| **2**  | [*Dive!*](https://adventofcode.com/2021/day/2) | [Click here](./day_02_-_dive/part_1.py) | [Click here](./day_02_-_dive/part_2.py) |
 <!--| **3**  | [](https://adventofcode.com/2021/day/3) | [Click here]() | [Click here]() |
 | **4**  | [](https://adventofcode.com/2021/day/4) | [Click here]() | [Click here]() |
 | **5**  | [](https://adventofcode.com/2021/day/5) | [Click here]() | [Click here]() |
