@@ -9,8 +9,8 @@ Coded primarily in Python.
 | :-----: | :----: | :----: | :----: |
 | **1**  | [*Sonar Sweep*](https://adventofcode.com/2021/day/1) | [Click here](./day_01_-_sonar_sweep/part_1.py) | [Click here](./day_01_-_sonar_sweep/part_2.py) |
 | **2**  | [*Dive!*](https://adventofcode.com/2021/day/2) | [Click here](./day_02_-_dive/part_1.py) | [Click here](./day_02_-_dive/part_2.py) |
-<!--| **3**  | [](https://adventofcode.com/2021/day/3) | [Click here]() | [Click here]() |
-| **4**  | [](https://adventofcode.com/2021/day/4) | [Click here]() | [Click here]() |
+| **3**  | [*Binary Diagnostic*](https://adventofcode.com/2021/day/3) | [Click here](./day_03_-_binary_diagnostic/part_1.py) | [Click here](./day_03_-_binary_diagnostic/part_2.py) |
+<!--| **4**  | [](https://adventofcode.com/2021/day/4) | [Click here]() | [Click here]() |
 | **5**  | [](https://adventofcode.com/2021/day/5) | [Click here]() | [Click here]() |
 | **6**  | [](https://adventofcode.com/2021/day/6) | [Click here]() | [Click here]() |
 | **7**  | [](https://adventofcode.com/2021/day/7) | [Click here]() | [Click here]() |
