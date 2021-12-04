@@ -28,6 +28,7 @@ def solution(elements: list[int]) -> int:
 
 	return oxygen_rating[0] * carbon_dioxide_rating[0]
 
+
 def main():
 	with open('input_file.txt', 'r') as f:
 		inputs = [int(line, 2) for line in f.readlines()]

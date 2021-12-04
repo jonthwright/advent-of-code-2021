@@ -13,6 +13,7 @@ def solution(elements: list[Tuple[str, int]]) -> int:
 				depth += aim * unit
 	return depth * horizontal
 
+
 def main():
 	with open('input_file.txt', 'r') as f:
 		inputs = [line.split(" ") for line in f.readlines()]

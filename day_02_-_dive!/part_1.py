@@ -11,7 +11,7 @@ def solution(elements: list[Tuple[str, int]]) -> int:
 			case "up" : depth -= unit
 			case "forward" : horizontal += unit
 	return depth * horizontal
-		
+
 		
 def main():
 	with open('input_file.txt', 'r') as f:
