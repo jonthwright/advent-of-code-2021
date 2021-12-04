@@ -13,9 +13,12 @@ def solution(elements: list[Tuple[str, int]]) -> int:
 	return depth * horizontal
 		
 		
-if __name__ == '__main__':
+def main():
 	with open('input_file.txt', 'r') as f:
 		inputs = [line.split(" ") for line in f.readlines()]
 		inputs = [(line[0], int(line[1])) for line in inputs]
 	print('Day 02 : Dive! - part 1')
 	print(f'>>> Answer : {solution(inputs)}')
+
+if __name__ == '__main__':
+	main()

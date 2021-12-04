@@ -15,7 +15,7 @@ def solution(elements: list[int]) -> int:
  
 	return gamma_rate * epsilon_rate
 
-def main() -> None:
+def main():
 	with open('input_file.txt', 'r') as f:
 		inputs = [int(line, 2) for line in f.readlines()]
 	print('Day 03 : Binnary Diagnostics - part 1')
