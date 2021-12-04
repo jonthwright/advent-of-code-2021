@@ -4,8 +4,7 @@ import functools
 
 def solution(elements: list[int]) -> int:
 	max_bit_length = max(elements).bit_length()
-	oxygen_rating = elements.copy()
-	carbon_dioxide_rating = elements.copy()
+	oxygen_rating = carbon_dioxide_rating = elements.copy()
  
 	for offset in range(max_bit_length - 1, -1, -1):
 		if len(oxygen_rating) > 1:
@@ -32,7 +31,7 @@ def solution(elements: list[int]) -> int:
 def main():
 	with open('input_file.txt', 'r') as f:
 		inputs = [int(line, 2) for line in f.readlines()]
-	print('Day 03 : Binnary Diagnostics - part 2')
+	print('Day 03 : Binary Diagnostics - part 2')
 	print(f'>>> Answer : {solution(inputs)}')
 
 if __name__ == '__main__':
