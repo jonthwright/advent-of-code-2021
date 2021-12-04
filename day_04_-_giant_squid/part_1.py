@@ -5,25 +5,24 @@ from typing import Iterator
 class Bingo:
 	def __init__(self, board_mtx: list[list[int]]) -> None:
 		self.__board_mtx = board_mtx
-		self.__marked_board_mtx = [[0 for _ in row] for row in board_mtx]
 		
 	def mark_drawn_number(self, target: int) -> None:
 		for i, row in enumerate(self.__board_mtx):
 			for j, num in enumerate(row):
 				if num == target:
-					self.__marked_board_mtx[i][j] = 1
+					self.__board_mtx[i][j] = float("inf")
 	
 	@property
 	def is_winning_board(self) -> bool:
-		row_bingoed = any(all(row) for row in self.__marked_board_mtx)
-		col_bingoed = any(all(col) for col in zip(*self.__marked_board_mtx))
+		row_bingoed = any(all(col == float("inf") for col in row) for row in self.__board_mtx)
+		col_bingoed = any(all(row == float("inf") for row in col) for col in zip(*self.__board_mtx))
 
 		return row_bingoed or col_bingoed 
 	
 	def __iter__ (self) -> Iterator[int]:
 		for row in range(len(self.__board_mtx)):
 			for col in range(len(self.__board_mtx[row])):
-				if not self.__marked_board_mtx[row][col]:
+				if self.__board_mtx[row][col] != float("inf"):
 					yield self.__board_mtx[row][col]
 
 
