@@ -7,7 +7,7 @@ def solution(elements):
 	gamma_rate = 0
 	max_bit_length = max(elements).bit_length()
 
-	for offset in range(max_bit_length):
+	for offset in range(max_bit_length, -1, -1):
 		ones_counter = functools.reduce(lambda x, y: x + ((y >> offset) & 1), elements, 0)
 		gamma_rate |= (ones_counter > (size // 2)) << offset
 	
