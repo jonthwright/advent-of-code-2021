@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-def solution(elements):
-	depth = horizontal = aim = 0
+from typing import Tuple
 
+def solution(elements: list[Tuple[str, int]]) -> int:
+	depth = horizontal = aim = 0
 	for cmd, unit in elements:
 		match cmd:
 			case "down" : aim += unit

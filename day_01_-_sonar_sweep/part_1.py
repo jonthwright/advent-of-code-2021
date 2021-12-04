@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def solution(elements):
+def solution(elements: list[int]) -> int:
 	measurements_inc = 0
 	for i in range(len(elements)):
 		measurements_inc += elements[i] > elements[i - 1]

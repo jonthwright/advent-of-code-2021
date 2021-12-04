@@ -2,7 +2,7 @@
 
 import functools
 
-def solution(elements):
+def solution(elements: list[int]) -> int:
 	max_bit_length = max(elements).bit_length()
 	oxygen_rating = elements.copy()
 	carbon_dioxide_rating = elements.copy()
@@ -28,9 +28,11 @@ def solution(elements):
 
 	return oxygen_rating[0] * carbon_dioxide_rating[0]
 
-
-if __name__ == '__main__':
+def main() -> None:
 	with open('input_file.txt', 'r') as f:
 		inputs = [int(line, 2) for line in f.readlines()]
 	print('Day 03 : Binnary Diagnostics - part 2')
 	print(f'>>> Answer : {solution(inputs)}')
+
+if __name__ == '__main__':
+	main()

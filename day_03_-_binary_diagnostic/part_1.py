@@ -2,7 +2,7 @@
 
 import functools
 
-def solution(elements):
+def solution(elements: list[int]) -> int:
 	size = len(elements)
 	gamma_rate = 0
 	max_bit_length = max(elements).bit_length()
@@ -15,9 +15,11 @@ def solution(elements):
  
 	return gamma_rate * epsilon_rate
 
-
-if __name__ == '__main__':
+def main() -> None:
 	with open('input_file.txt', 'r') as f:
 		inputs = [int(line, 2) for line in f.readlines()]
 	print('Day 03 : Binnary Diagnostics - part 1')
 	print(f'>>> Answer : {solution(inputs)}')
+
+if __name__ == '__main__':
+	main()
