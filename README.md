@@ -11,8 +11,8 @@ Coded primarily in Python.
 | **02**  | [**_Dive!_**](https://adventofcode.com/2021/day/2) | [Click here](./day_02_-_dive!/part_1.py) | [Click here](./day_02_-_dive!/part_2.py) |
 | **03**  | [**_Binary Diagnostic_**](https://adventofcode.com/2021/day/3) | [Click here](./day_03_-_binary_diagnostic/part_1.py) | [Click here](./day_03_-_binary_diagnostic/part_2.py) |
 | **04**  | [**_Giant Squid_**](https://adventofcode.com/2021/day/4) | [Click here](./day_04_-_giant_squid/part_1.py) | [Click here](./day_04_-_giant_squid/part_2.py) |
-<!--| **05**  | [**_{}_**](https://adventofcode.com/2021/day/5) | [Click here](./day_05_-_/part_1.py) | [Click here](./day_05_-_/part_2.py) |
-| **06**  | [**_{}_**](https://adventofcode.com/2021/day/6) | [Click here](./day_06_-_/part_1.py) | [Click here](./day_06_-_/part_2.py) |
+| **05**  | [**_Hydrothermal Venture_**](https://adventofcode.com/2021/day/5) | [Click here](./day_05_-_hydrothermal_venture/part_1.py) | [Click here](./day_05_-_hydrothermal_venture/part_2.py) |
+<!--| **06**  | [**_{}_**](https://adventofcode.com/2021/day/6) | [Click here](./day_06_-_/part_1.py) | [Click here](./day_06_-_/part_2.py) |
 | **07**  | [**_{}_**](https://adventofcode.com/2021/day/7) | [Click here](./day_07_-_/part_1.py) | [Click here](./day_07_-_/part_2.py) |
 | **08**  | [**_{}_**](https://adventofcode.com/2021/day/8) | [Click here](./day_08_-_/part_1.py) | [Click here](./day_08_-_/part_2.py) |
 | **09**  | [**_{}_**](https://adventofcode.com/2021/day/9) | [Click here](./day_09_-_/part_1.py) | [Click here](./day_09_-_/part_2.py) |
