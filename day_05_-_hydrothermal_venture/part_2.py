@@ -18,9 +18,7 @@ def solution(elements: list[list[int]]) -> int:
 
 			lines[(x0, y0)] += 1
 			while x0 != x1 and y0 != y1:
-				x0 += dx
-				y0 += dy
-				lines[(x0, y0)] += 1
+				lines[((x0 := x0 + dx), (y0 := y0 + dy))] += 1
 
 	return len([l for l in lines.values() if l > 1])
 
