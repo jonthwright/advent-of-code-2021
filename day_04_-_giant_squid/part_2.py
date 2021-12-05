@@ -11,7 +11,8 @@ class Bingo:
 			for j, num in enumerate(row):
 				if num == target:
 					self.__board_mtx[i][j] = float("inf")
-	
+					return
+ 	
 	@property
 	def is_winning_board(self) -> bool:
 		row_bingoed = any(all(col == float("inf") for col in row) for row in self.__board_mtx)
