@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 
-from collections import defaultdict, Counter
-
 def solution(elements: list[int]) -> int:
-	lanternfish_school = Counter(elements)
+	cur_lanternfish_school = [0] * 9
+
+	for lantern_timer in elements:
+		cur_lanternfish_school[lantern_timer] += 1
 
 	for _ in range(256):
-		new_lanternfish_school = defaultdict(int)
-		for lantern_timer, latern_count in lanternfish_school.items():
-			if lantern_timer > 0:
-				new_lanternfish_school[lantern_timer - 1] += latern_count 
-			else:
-				new_lanternfish_school[6] += latern_count
-				new_lanternfish_school[8] += latern_count 
-		lanternfish_school = new_lanternfish_school
-
-	return sum(lanternfish_school.values())
+		next_lanternfish_school = [0] * 9
+		for lantern_timer in range(1, 9):
+			next_lanternfish_school[lantern_timer - 1] = cur_lanternfish_school[lantern_timer]
+		next_lanternfish_school[6] += cur_lanternfish_school[0]
+		next_lanternfish_school[8] += cur_lanternfish_school[0]
+		cur_lanternfish_school = [fish for fish in next_lanternfish_school]
+  
+	return sum(cur_lanternfish_school)
 
 
 def main():
@@ -23,6 +22,7 @@ def main():
 		inputs = [int(line) for line in f.readline().split(',')]
 	print('Day 06 : Lanternfish - part 2')
 	print(f'>>> Answer : {solution(inputs)}')
+
 
 if __name__ == '__main__':
 	main()
