@@ -3,7 +3,7 @@
 from collections import defaultdict
 
 def solution(elements: list[list[int]]) -> int:
-	lines = defaultdict(lambda: 0)
+	lines = defaultdict(int)
 
 	for x0, y0, x1, y1 in elements:
 		if x0 == x1:
