@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from collections import defaultdict, Counter
-
 def solution(elements: list[int]) -> int:
 	cur_lanternfish_school = [0] * 9
 
