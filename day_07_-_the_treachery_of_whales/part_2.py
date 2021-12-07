@@ -4,7 +4,7 @@ import functools
 
 def crab_sum(crab: int, position: int) -> int:
     delta = abs(crab - position)
-    return int((delta * (delta + 1)) / 2)
+    return (delta * (delta + 1)) // 2
 
 def solution(elements: list[int]) -> int:
 	best_fuel_cost = float('inf')
