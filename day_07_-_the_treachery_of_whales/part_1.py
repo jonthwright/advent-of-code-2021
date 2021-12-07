@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 
-import functools
-
 def solution(elements: list[int]) -> int:
 	best_fuel_cost = float('inf')
 
 	for position in range(min(elements), max(elements) + 1):
-		score = functools.reduce(lambda acc, crab: acc + abs(crab - position), elements, 0)
+		score = sum(abs(crab - position) for crab in elements)
 		best_fuel_cost = min(best_fuel_cost, score)
 
 	return best_fuel_cost
