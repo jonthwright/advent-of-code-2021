@@ -14,8 +14,8 @@ Coded primarily in Python.
 | **05**  | [**_Hydrothermal Venture_**](https://adventofcode.com/2021/day/5) | [Click here](./day_05_-_hydrothermal_venture/part_1.py) | [Click here](./day_05_-_hydrothermal_venture/part_2.py) |<-->
 | **06**  | [**_Lanternfish_**](https://adventofcode.com/2021/day/6) | [Click here](./day_06_-_lanternfish/part_1.py) | [Click here](./day_06_-_lanternfish/part_2.py) |
 | **07**  | [**_The Treachery of Whales_**](https://adventofcode.com/2021/day/7) | [Click here](./day_07_-_the_treachery_of_whales/part_1.py) | [Click here](./day_07_-_the_treachery_of_whales/part_2.py) |
-<!-- | **08**  | [**_{}_**](https://adventofcode.com/2021/day/8) | [Click here](./day_08_-_/part_1.py) | [Click here](./day_08_-_/part_2.py) |
-| **09**  | [**_{}_**](https://adventofcode.com/2021/day/9) | [Click here](./day_09_-_/part_1.py) | [Click here](./day_09_-_/part_2.py) |
+| **08**  | [**_Seven Segment Search_**](https://adventofcode.com/2021/day/8) | [Click here](./day_08_-_seven_segment_search/part_1.py) | [Click here](./day_08_-_seven_segment_search/part_2.py) |
+<!-- | **09**  | [**_{}_**](https://adventofcode.com/2021/day/9) | [Click here](./day_09_-_/part_1.py) | [Click here](./day_09_-_/part_2.py) |
 | **10** | [**_{}_**](https://adventofcode.com/2021/day/10) | [Click here](./day_10_-_/part_1.py) | [Click here](./day_10_-_/part_2.py) |
 | **11** | [**_{}_**](https://adventofcode.com/2021/day/11) | [Click here](./day_11_-_/part_1.py) | [Click here](./day_11_-_/part_2.py) |
 | **12** | [**_{}_**](https://adventofcode.com/2021/day/12) | [Click here](./day_12_-_/part_1.py) | [Click here](./day_12_-_/part_2.py) |
