@@ -2,6 +2,7 @@
 
 from typing import Tuple, Set
 from collections import deque
+import functools
 
 def low_basin_points(basins: list[list[int]]) -> Set[Tuple[int, int]]:
 	low_points = set()
@@ -27,14 +28,14 @@ def low_basin_points(basins: list[list[int]]) -> Set[Tuple[int, int]]:
 
 def solution(elements: list[list[int]]) -> int:
 	low_points = low_basin_points(elements)
-	largest, second_largest, third_largest = 0, sum(sum(elem) for elem in elements), 1
+	basin_sizes = [0] * 3
 
 	for x, y in low_points:
-		basin_stack = deque([(x, y)])
+		basin_neighbours = deque([(x, y)])
 		basin_points = set()
 
-		while basin_stack:
-			current_point = current_x, current_y = basin_stack.pop()
+		while basin_neighbours:
+			current_point = current_x, current_y = basin_neighbours.pop()
 			if elements[current_x][current_y] == 9:
 				continue
 
@@ -43,21 +44,22 @@ def solution(elements: list[list[int]]) -> int:
 			for delta in range(-1, 2, 2):
 				adjacent_x = current_x + delta
 				if 0 <= adjacent_x < len(elements) and (adjacent_x, current_y) not in basin_points:
-					basin_stack.append((adjacent_x, current_y))
+					basin_neighbours.append((adjacent_x, current_y))
 
 			for delta in range(-1, 2, 2):
 				adjacent_y = current_y + delta
 				if 0 <= adjacent_y < len(elements[current_x])  and (current_x, adjacent_y) not in basin_points:
-					basin_stack.append((current_x, adjacent_y))
-
-		if largest < (basin_size := len(basin_points)):
-			largest, second_largest, third_largest = basin_size, largest, second_largest
-		elif second_largest < basin_size:
-			second_largest, third_largest = basin_size, second_largest
-		elif third_largest < basin_size:
-			third_largest = basin_size
+					basin_neighbours.append((current_x, adjacent_y))
+		
+		basin_size = len(basin_points)
+		if basin_sizes[0] < basin_size:
+			basin_sizes[0], basin_sizes[1:] = basin_size, basin_sizes[0:2]
+		elif basin_sizes[1] < basin_size:
+			basin_sizes[1], basin_sizes[2] = basin_size, basin_sizes[1]
+		elif basin_sizes[2] < basin_size:
+			basin_sizes[2] = basin_size
 			
-	return largest * second_largest * third_largest
+	return functools.reduce(lambda x, y: x * y, basin_sizes)
 
 
 def main():
