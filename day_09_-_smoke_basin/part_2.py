@@ -17,13 +17,13 @@ def get_basin_size(basins: list[list[int]], x: int, y: int) -> None:
 
 		for delta in range(-1, 2, 2):
 			x_delta = x + delta
-			if (0 <= x_delta < len(basins)) and (0 <= basins[x_delta][y] < 9):
+			if 0 <= x_delta < len(basins) and 0 <= basins[x_delta][y] < 9:
 				basin_neighbours.append((x_delta, y))
 				basins[x_delta][y] = -1
 
 		for delta in range(-1, 2, 2):
 			y_delta = y + delta
-			if (0 <= y_delta < len(basins[x])) and (0 <= basins[x][y_delta] < 9):
+			if 0 <= y_delta < len(basins[x]) and 0 <= basins[x][y_delta] < 9:
 				basin_neighbours.append((x, y_delta))
 				basins[x][y_delta] = -1
 
