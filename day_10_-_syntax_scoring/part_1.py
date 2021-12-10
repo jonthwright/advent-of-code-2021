@@ -25,8 +25,7 @@ def solution(elements: list[str]) -> int:
 				bracket_stack.append(bracket)
 			else:
 				pop_bracket_stack = bracket_stack.pop()
-				if bracket_dict[pop_bracket_stack] != bracket:
-					syntax_error_score += bracket_error_points[bracket]
+				syntax_error_score += bracket_error_points[bracket] * (bracket_dict[pop_bracket_stack] != bracket)
 	
 	return syntax_error_score
 
