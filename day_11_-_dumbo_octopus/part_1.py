@@ -8,23 +8,23 @@ def flashing_octopi(octopi: list[list[int]]) -> int:
 		for x in range(len(octopi[y])):
 			octopi[y][x] += 1
 			if octopi[y][x] == 10:
-				flashing_octopus.append((y, x))
+				flashing_octopus.append((x, y))
 
 	while flashing_octopus:
 		flashes += 1
-		y, x = flashing_octopus.pop()
-		flashed_octopus.append((y, x))
+		x, y = flashing_octopus.pop()
+		flashed_octopus.append((x, y))
 
 		for j, i in [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]:
-			dy, dx = y + j, x + i
+			dx, dy = x + i, y + j
 
 			if 0 <= dy < len(octopi) and 0 <= dx < len(octopi[dy]):
 				if octopi[dy][dx] == 9:
-					flashing_octopus.append((dy, dx))
+					flashing_octopus.append((dx, dy))
 				if octopi[dy][dx] < 10:
 					octopi[dy][dx] += 1
 
-	for y, x in flashed_octopus:
+	for x, y in flashed_octopus:
 		octopi[y][x] = 0
 
 	return flashes

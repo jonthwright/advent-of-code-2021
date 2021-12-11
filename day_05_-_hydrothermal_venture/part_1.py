@@ -7,11 +7,11 @@ def solution(elements: list[list[int]]) -> int:
 
 	for x0, y0, x1, y1 in elements:
 		if x0 == x1:
-			for y_ in range(min(y0, y1), max(y0, y1) + 1):
-				lines[(x0, y_)] += 1
+			for dy in range(min(y0, y1), max(y0, y1) + 1):
+				lines[(x0, dy)] += 1
 		elif y0 == y1:
-			for x_ in range(min(x0, x1), max(x0, x1) + 1):
-				lines[(x_, y0)] += 1
+			for dx in range(min(x0, x1), max(x0, x1) + 1):
+				lines[(dx, y0)] += 1
 			
 	return len([l for l in lines.values() if l > 1])
 

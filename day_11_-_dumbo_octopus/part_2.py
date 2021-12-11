@@ -9,32 +9,32 @@ def all_flashing_octopi(octopi: list[list[int]]) -> int:
 			octopi_count += 1
 			octopi[y][x] += 1
 			if octopi[y][x] == 10:
-				flashing_octopus.append((y, x))
+				flashing_octopus.append((x, y))
 
 	while flashing_octopus:
 		flashes += 1
-		y, x = flashing_octopus.pop()
-		flashed_octopus.append((y, x))
+		x, y = flashing_octopus.pop()
+		flashed_octopus.append((x, y))
 
 		for j, i in [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]:
-			dy, dx = y + j, x + i
+			dx, dy = x + i, y + j
 
 			if 0 <= dy < len(octopi) and 0 <= dx < len(octopi[dy]):
 				if octopi[dy][dx] == 9:
-					flashing_octopus.append((dy, dx))
+					flashing_octopus.append((dx, dy))
 				if octopi[dy][dx] < 10:
 					octopi[dy][dx] += 1
 
-	for y, x in flashed_octopus:
+	for x, y in flashed_octopus:
 		octopi[y][x] = 0
 
 	return flashes == octopi_count
 
 def solution(elements: list[list[int]]) -> int:
-	step = 0
+	steps = 0
 	while not all_flashing_octopi(elements):
-		step += 1
-	return step + 1
+		steps += 1
+	return steps + 1
 
 
 def main():

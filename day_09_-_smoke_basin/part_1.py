@@ -3,19 +3,19 @@
 def solution(elements: list[list[int]]) -> int:
 	risk_level = 0
 
-	for x in range(len(elements)):
-		for y, low_point in enumerate(elements[x]):
+	for y in range(len(elements)):
+		for x, low_point in enumerate(elements[y]):
 			min_adjacent = float('inf')
 
 			for delta in range(-1, 2, 2):
-				x_delta = x + delta
-				if 0 <= x_delta < len(elements):
-					min_adjacent = min(min_adjacent, elements[x_delta][y])
+				dy = y + delta
+				if 0 <= dy < len(elements):
+					min_adjacent = min(min_adjacent, elements[dy][x])
 
 			for delta in range(-1, 2, 2):
-				y_delta = y + delta
-				if 0 <= y_delta < len(elements[x]):
-					min_adjacent = min(min_adjacent, elements[x][y_delta])
+				dx = x + delta
+				if 0 <= dx < len(elements[y]):
+					min_adjacent = min(min_adjacent, elements[y][dx])
 
 			is_low_point = low_point < min_adjacent
 			risk_level += (low_point * is_low_point) + is_low_point
