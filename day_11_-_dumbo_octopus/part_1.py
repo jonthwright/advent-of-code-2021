@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def flashing_octopi(octopi: list[list[int]]) -> int:
-	flashing_octopus, flashed_octopus = [], []
+	flashing_octopus, flashed_octopus = [], set()
 	flashes = 0
 
 	for y in range(len(octopi)):
@@ -13,15 +13,16 @@ def flashing_octopi(octopi: list[list[int]]) -> int:
 	while flashing_octopus:
 		flashes += 1
 		x, y = flashing_octopus.pop()
-		flashed_octopus.append((x, y))
+		flashed_octopus.add((x, y))
 
-		for j, i in [(-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1)]:
-			dx, dy = x + i, y + j
+		for dy in range(-1, 2):
+			dy += y
+			for dx in range(-1, 2):
+				dx += x
 
-			if 0 <= dy < len(octopi) and 0 <= dx < len(octopi[dy]):
-				if octopi[dy][dx] == 9:
-					flashing_octopus.append((dx, dy))
-				if octopi[dy][dx] < 10:
+				if 0 <= dy < len(octopi) and 0 <= dx < len(octopi[dy]) and (dx, dy) not in flashed_octopus:
+					if octopi[dy][dx] == 9:
+						flashing_octopus.append((dx, dy))
 					octopi[dy][dx] += 1
 
 	for x, y in flashed_octopus:
