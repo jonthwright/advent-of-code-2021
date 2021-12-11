@@ -37,6 +37,7 @@ def solution(elements: list[list[int]]) -> int:
 		for x in range(len(elements[y])):
 			if elements[y][x] != -1 or elements[y][x] != 9:
 				basin_size = get_basin_size(elements, x, y)
+
 			if basin_sizes[0] < basin_size:
 				basin_sizes[0], basin_sizes[1:] = basin_size, basin_sizes[0:2]
 			elif basin_sizes[1] < basin_size:
