@@ -6,7 +6,7 @@ def solution(elements: list[tuple[list[str], list[str]]]) -> int:
 
 def main():
 	with open('input_file.txt', 'r') as f:
-		inputs = [tuple(split.split() for split in line.split('|')) for line in f.readlines()]
+		inputs = [tuple(split.split() for split in line.strip().split('|')) for line in f.readlines()]
 	print('Day 08 : Seven Segment Search - part 1')
 	print(f'>>> Answer : {solution(inputs)}')
 

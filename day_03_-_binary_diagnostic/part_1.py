@@ -18,7 +18,7 @@ def solution(elements: list[int]) -> int:
 
 def main():
 	with open('input_file.txt', 'r') as f:
-		inputs = [int(line, 2) for line in f.readlines()]
+		inputs = [int(line.strip(), 2) for line in f.readlines()]
 	print('Day 03 : Binary Diagnostics - part 1')
 	print(f'>>> Answer : {solution(inputs)}')
 

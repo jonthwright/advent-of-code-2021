@@ -25,7 +25,7 @@ def solution(elements: list[list[int]]) -> int:
 
 def main():
 	with open('input_file.txt', 'r') as f:
-		inputs = [line.strip('\n').split(' -> ') for line in f.readlines()]
+		inputs = [line.strip().split(' -> ') for line in f.readlines()]
 		inputs = [tuple(int(point) for points in line for point in points.split(',')) for line in inputs]
 	print('Day 05 : Hydrothermal Venture - part 2')
 	print(f'>>> Answer : {solution(inputs)}')

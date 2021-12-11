@@ -19,7 +19,7 @@ def solution(elements: list[int]) -> int:
 
 def main():
 	with open('input_file.txt', 'r') as f:
-		inputs = [int(line) for line in f.readline().split(',')]
+		inputs = [int(line) for line in f.readline().strip().split(',')]
 	print('Day 06 : Lanternfish - part 2')
 	print(f'>>> Answer : {solution(inputs)}')
 
