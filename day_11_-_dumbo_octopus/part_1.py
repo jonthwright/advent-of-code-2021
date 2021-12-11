@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 def flashing_octopi(octopi: list[list[int]]) -> int:
 	flashing_octopus, flashed_octopus = [], []
 	flashes = 0

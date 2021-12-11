@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-
-from types import MappingProxyType
-
-
 def all_flashing_octopi(octopi: list[list[int]]) -> int:
 	flashing_octopus, flashed_octopus = [], []
 	flashes, octopi_count = 0, 0
