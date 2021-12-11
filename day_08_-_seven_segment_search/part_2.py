@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import Tuple
-
-def solution(elements: list[Tuple[list[str], list[str]]]) -> int:
+def solution(elements: list[tuple[list[str], list[str]]]) -> int:
 	signal_summation = 0
  
 	for in_signals, out_signals in elements:

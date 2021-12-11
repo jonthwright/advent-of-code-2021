@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import Tuple
-
-def solution(elements: list[Tuple[list[str], list[str]]]) -> int:
+def solution(elements: list[tuple[list[str], list[str]]]) -> int:
 	signal_range_set = set(range(5, 7))
 	return sum(len(out_signal) not in signal_range_set for _, out_signals in elements for out_signal in out_signals)
 

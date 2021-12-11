@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import Tuple
-
-def solution(elements: list[Tuple[str, int]]) -> int:
+def solution(elements: list[tuple[str, int]]) -> int:
 	depth = horizontal = 0
 
 	for op, unit in elements:

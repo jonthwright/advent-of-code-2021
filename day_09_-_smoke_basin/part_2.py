@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from typing import Tuple, Set
 import functools
 
 def get_basin_size(basins: list[list[int]], x: int, y: int) -> None:
