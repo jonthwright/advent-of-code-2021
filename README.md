@@ -17,8 +17,8 @@ Completed the challenges primarily in Python.
 | **08**  | [**_Seven Segment Search_**](https://adventofcode.com/2021/day/8) | [Click here](./day_08_-_seven_segment_search/part_1.py) | [Click here](./day_08_-_seven_segment_search/part_2.py) |
 | **09**  | [**_Smole Basin_**](https://adventofcode.com/2021/day/9) | [Click here](./day_09_-_smoke_basin/part_1.py) | [Click here](./day_09_-_smoke_basin/part_2.py) |
 | **10** | [**_Syntax Scoring_**](https://adventofcode.com/2021/day/10) | [Click here](./day_10_-_syntax_scoring/part_1.py) | [Click here](./day_10_-_syntax_scoring/part_2.py) |
-<!-- | **11** | [**_{}_**](https://adventofcode.com/2021/day/11) | [Click here](./day_11_-_/part_1.py) | [Click here](./day_11_-_/part_2.py) |
-| **12** | [**_{}_**](https://adventofcode.com/2021/day/12) | [Click here](./day_12_-_/part_1.py) | [Click here](./day_12_-_/part_2.py) |
+| **11** | [**_Dumbo Octopus_**](https://adventofcode.com/2021/day/11) | [Click here](./day_11_-_dumbo_octopus/part_1.py) | [Click here](./day_11_-_dumbo_octopus/part_2.py) |
+<!--| **12** | [**_{}_**](https://adventofcode.com/2021/day/12) | [Click here](./day_12_-_/part_1.py) | [Click here](./day_12_-_/part_2.py) |
 | **13** | [**_{}_**](https://adventofcode.com/2021/day/13) | [Click here](./day_13_-_/part_1.py) | [Click here](./day_13_-_/part_2.py) |
 | **14** | [**_{}_**](https://adventofcode.com/2021/day/14) | [Click here](./day_14_-_/part_1.py) | [Click here](./day_14_-_/part_2.py) |
 | **15** | [**_{}_**](https://adventofcode.com/2021/day/15) | [Click here](./day_15_-_/part_1.py) | [Click here](./day_15_-_/part_2.py) |
