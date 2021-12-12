@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+import os
 from typing import Iterator
+
 
 class Bingo:
 	def __init__(self, board_mtx: list[list[int]]) -> None:
@@ -40,7 +42,8 @@ def solution(header: list[int], elements: list[list[int]]) -> int:
 
 
 def main():
-	with open('input_file.txt', 'r') as f:
+	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
 		input_header = [int(num) for num in f.readline().strip().split(',')]
 		inputs_lines = [[int(num) for num in inputs.strip().split(' ') if num] 
                   					for inputs in f.readlines() if inputs != '\n']

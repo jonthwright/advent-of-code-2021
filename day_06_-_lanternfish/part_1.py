@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+import os
+
+
 def solution(elements: list[int]) -> int:
 	cur_lanternfish_school = [0] * 9
 
@@ -18,7 +21,8 @@ def solution(elements: list[int]) -> int:
 
 
 def main():
-	with open('input_file.txt', 'r') as f:
+	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
 		inputs = [int(line) for line in f.readline().strip().split(',')]
 	print('Day 06 : Lanternfish - part 1')
 	print(f'>>> Answer : {solution(inputs)}')

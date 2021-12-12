@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+import os
+
+
 def solution(elements: list[tuple[str, int]]) -> int:
 	depth = horizontal = 0
 
@@ -12,7 +15,8 @@ def solution(elements: list[tuple[str, int]]) -> int:
 
 		
 def main():
-	with open('input_file.txt', 'r') as f:
+	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
 		inputs = [line.strip().split(' ') for line in f.readlines()]
 		inputs = [(line[0], int(line[1])) for line in inputs]
 	print('Day 02 : Dive! - part 1')

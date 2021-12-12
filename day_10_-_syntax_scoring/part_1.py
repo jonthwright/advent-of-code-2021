@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+import os
+
+
 def solution(elements: list[str]) -> int:
 	bracket_dict = {
 		'(' : ')',
@@ -31,7 +34,8 @@ def solution(elements: list[str]) -> int:
 
 
 def main():
-	with open('input_file.txt', 'r') as f:
+	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
 		inputs = [row.strip() for row in f.readlines()]
 	print('Day 10 : Syntax Scoring - part 1')
 	print(f'>>> Answer : {solution(inputs)}')

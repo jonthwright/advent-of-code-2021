@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+import os
+
+
 def solution(elements: list[list[int]]) -> int:
 	risk_level = 0
 
@@ -24,7 +27,8 @@ def solution(elements: list[list[int]]) -> int:
 
 
 def main():
-	with open('input_file.txt', 'r') as f:
+	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
 		inputs = [[int(col) for col in row.strip()] for row in f.readlines()]
 	print('Day 09 : Smoke Basin - part 1')
 	print(f'>>> Answer : {solution(inputs)}')

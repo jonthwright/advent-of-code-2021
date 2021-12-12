@@ -1,6 +1,8 @@
 # #!/usr/bin/env python3
 		
+import os
 from collections import defaultdict
+
 
 def solution(elements: list[list[int]]) -> int:
 	lines = defaultdict(int)
@@ -24,7 +26,8 @@ def solution(elements: list[list[int]]) -> int:
 
 
 def main():
-	with open('input_file.txt', 'r') as f:
+	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
 		inputs = [line.strip().split(' -> ') for line in f.readlines()]
 		inputs = [tuple(int(point) for points in line for point in points.split(',')) for line in inputs]
 	print('Day 05 : Hydrothermal Venture - part 2')

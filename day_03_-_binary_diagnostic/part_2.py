@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+import os
 import functools
+
 
 def solution(elements: list[int]) -> int:
 	max_bit_length = max(elements).bit_length()
@@ -29,7 +31,8 @@ def solution(elements: list[int]) -> int:
 
 
 def main():
-	with open('input_file.txt', 'r') as f:
+	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
 		inputs = [int(line.strip(), 2) for line in f.readlines()]
 	print('Day 03 : Binary Diagnostics - part 2')
 	print(f'>>> Answer : {solution(inputs)}')
