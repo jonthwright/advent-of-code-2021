@@ -3,8 +3,8 @@
 from collections import defaultdict
 
 def count_cave_pathings(cave_system: list[tuple[str, str]],
-                        current_cave: str = 'start',
-                        visited_cave: set[str] = set()) -> int:
+						current_cave: str = 'start',
+						visited_cave: set[str] = set()) -> int:
 
 	if current_cave == 'end':
 		return 1
@@ -12,7 +12,7 @@ def count_cave_pathings(cave_system: list[tuple[str, str]],
 		return 0
 
 	return sum(count_cave_pathings(cave_system, next_cave, visited_cave | {current_cave})
-            						for next_cave in cave_system[current_cave])
+									for next_cave in cave_system[current_cave])
 
 def solution(elements: list[tuple[str, str]]) -> int:
 	graph = defaultdict(set)
