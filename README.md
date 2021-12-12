@@ -18,20 +18,20 @@ Completed the challenges primarily in Python.
 | **09**  | [**_Smole Basin_**](https://adventofcode.com/2021/day/9) | [Click here](./day_09_-_smoke_basin/part_1.py) | [Click here](./day_09_-_smoke_basin/part_2.py) |
 | **10** | [**_Syntax Scoring_**](https://adventofcode.com/2021/day/10) | [Click here](./day_10_-_syntax_scoring/part_1.py) | [Click here](./day_10_-_syntax_scoring/part_2.py) |
 | **11** | [**_Dumbo Octopus_**](https://adventofcode.com/2021/day/11) | [Click here](./day_11_-_dumbo_octopus/part_1.py) | [Click here](./day_11_-_dumbo_octopus/part_2.py) |
-<!--| **12** | [**_{}_**](https://adventofcode.com/2021/day/12) | [Click here](./day_12_-_/part_1.py) | [Click here](./day_12_-_/part_2.py) |
-| **13** | [**_{}_**](https://adventofcode.com/2021/day/13) | [Click here](./day_13_-_/part_1.py) | [Click here](./day_13_-_/part_2.py) |
-| **14** | [**_{}_**](https://adventofcode.com/2021/day/14) | [Click here](./day_14_-_/part_1.py) | [Click here](./day_14_-_/part_2.py) |
-| **15** | [**_{}_**](https://adventofcode.com/2021/day/15) | [Click here](./day_15_-_/part_1.py) | [Click here](./day_15_-_/part_2.py) |
-| **16** | [**_{}_**](https://adventofcode.com/2021/day/16) | [Click here](./day_16_-_/part_1.py) | [Click here](./day_16_-_/part_2.py) |
-| **17** | [**_{}_**](https://adventofcode.com/2021/day/17) | [Click here](./day_17_-_/part_1.py) | [Click here](./day_17_-_/part_2.py) |
-| **18** | [**_{}_**](https://adventofcode.com/2021/day/18) | [Click here](./day_18_-_/part_1.py) | [Click here](./day_18_-_/part_2.py) |
-| **19** | [**_{}_**](https://adventofcode.com/2021/day/19) | [Click here](./day_19_-_/part_1.py) | [Click here](./day_19_-_/part_2.py) |
-| **20** | [**_{}_**](https://adventofcode.com/2021/day/20) | [Click here](./day_20_-_/part_1.py) | [Click here](./day_20_-_/part_2.py) |
-| **21** | [**_{}_**](https://adventofcode.com/2021/day/21) | [Click here](./day_21_-_/part_1.py) | [Click here](./day_21_-_/part_2.py) |
-| **22** | [**_{}_**](https://adventofcode.com/2021/day/22) | [Click here](./day_22_-_/part_1.py) | [Click here](./day_22_-_/part_2.py) |
-| **23** | [**_{}_**](https://adventofcode.com/2021/day/23) | [Click here](./day_23_-_/part_1.py) | [Click here](./day_23_-_/part_2.py) |
-| **24** | [**_{}_**](https://adventofcode.com/2021/day/24) | [Click here](./day_24_-_/part_1.py) | [Click here](./day_24_-_/part_2.py) |
-| **25 (final)** | [**_{}_**](https://adventofcode.com/2021/day/25) | [Click here](./day_25_-_/part_1.py) | __*(None)*__ |-->
+| **12** | [**_Passage Pathing_**](https://adventofcode.com/2021/day/12) | [Click here](./day_12_-_passage_pathing/part_1.py) | [Click here](./day_12_-_passage_pathing/part_2.py) |
+<!--| **13** | [**_..._**](https://adventofcode.com/2021/day/13) | [Click here](./day_13_-_/part_1.py) | [Click here](./day_13_-_/part_2.py) |
+| **14** | [**_..._**](https://adventofcode.com/2021/day/14) | [Click here](./day_14_-_/part_1.py) | [Click here](./day_14_-_/part_2.py) |
+| **15** | [**_..._**](https://adventofcode.com/2021/day/15) | [Click here](./day_15_-_/part_1.py) | [Click here](./day_15_-_/part_2.py) |
+| **16** | [**_..._**](https://adventofcode.com/2021/day/16) | [Click here](./day_16_-_/part_1.py) | [Click here](./day_16_-_/part_2.py) |
+| **17** | [**_..._**](https://adventofcode.com/2021/day/17) | [Click here](./day_17_-_/part_1.py) | [Click here](./day_17_-_/part_2.py) |
+| **18** | [**_..._**](https://adventofcode.com/2021/day/18) | [Click here](./day_18_-_/part_1.py) | [Click here](./day_18_-_/part_2.py) |
+| **19** | [**_..._**](https://adventofcode.com/2021/day/19) | [Click here](./day_19_-_/part_1.py) | [Click here](./day_19_-_/part_2.py) |
+| **20** | [**_..._**](https://adventofcode.com/2021/day/20) | [Click here](./day_20_-_/part_1.py) | [Click here](./day_20_-_/part_2.py) |
+| **21** | [**_..._**](https://adventofcode.com/2021/day/21) | [Click here](./day_21_-_/part_1.py) | [Click here](./day_21_-_/part_2.py) |
+| **22** | [**_..._**](https://adventofcode.com/2021/day/22) | [Click here](./day_22_-_/part_1.py) | [Click here](./day_22_-_/part_2.py) |
+| **23** | [**_..._**](https://adventofcode.com/2021/day/23) | [Click here](./day_23_-_/part_1.py) | [Click here](./day_23_-_/part_2.py) |
+| **24** | [**_..._**](https://adventofcode.com/2021/day/24) | [Click here](./day_24_-_/part_1.py) | [Click here](./day_24_-_/part_2.py) |
+| **25 (final)** | [**_..._**](https://adventofcode.com/2021/day/25) | [Click here](./day_25_-_/part_1.py) | __*(None)*__ |-->
 
 # Map
-![**_{}_**](./map.png?raw=true)
+![**_..._**](./map.png?raw=true)
