@@ -5,7 +5,7 @@ Completed the challenges primarily in Python.
 
 # Links to Solutions
 
-| *Day #* | Puzzle | Part 1 | Part 2 |
+| **_Day #_** | **Puzzle** | **Part 1** | **Part 2** |
 | :-----: | :----: | :----: | :----: |
 | **01**  | [**_Sonar Sweep_**](https://adventofcode.com/2021/day/1) | [Click here](./day_01_-_sonar_sweep/part_1.py) | [Click here](./day_01_-_sonar_sweep/part_2.py) |
 | **02**  | [**_Dive!_**](https://adventofcode.com/2021/day/2) | [Click here](./day_02_-_dive!/part_1.py) | [Click here](./day_02_-_dive!/part_2.py) |
@@ -19,8 +19,8 @@ Completed the challenges primarily in Python.
 | **10** | [**_Syntax Scoring_**](https://adventofcode.com/2021/day/10) | [Click here](./day_10_-_syntax_scoring/part_1.py) | [Click here](./day_10_-_syntax_scoring/part_2.py) |
 | **11** | [**_Dumbo Octopus_**](https://adventofcode.com/2021/day/11) | [Click here](./day_11_-_dumbo_octopus/part_1.py) | [Click here](./day_11_-_dumbo_octopus/part_2.py) |
 | **12** | [**_Passage Pathing_**](https://adventofcode.com/2021/day/12) | [Click here](./day_12_-_passage_pathing/part_1.py) | [Click here](./day_12_-_passage_pathing/part_2.py) |
-<!--| **13** | [**_..._**](https://adventofcode.com/2021/day/13) | [Click here](./day_13_-_/part_1.py) | [Click here](./day_13_-_/part_2.py) |
-| **14** | [**_..._**](https://adventofcode.com/2021/day/14) | [Click here](./day_14_-_/part_1.py) | [Click here](./day_14_-_/part_2.py) |
+| **13** | [**_Transparent Origami_**](https://adventofcode.com/2021/day/13) | [Click here](./day_13_-_transparent_origami/part_1.py) | [Click here](./day_13_-_transparent_origami/part_2.py) |
+<!-- | **14** | [**_..._**](https://adventofcode.com/2021/day/14) | [Click here](./day_14_-_/part_1.py) | [Click here](./day_14_-_/part_2.py) |
 | **15** | [**_..._**](https://adventofcode.com/2021/day/15) | [Click here](./day_15_-_/part_1.py) | [Click here](./day_15_-_/part_2.py) |
 | **16** | [**_..._**](https://adventofcode.com/2021/day/16) | [Click here](./day_16_-_/part_1.py) | [Click here](./day_16_-_/part_2.py) |
 | **17** | [**_..._**](https://adventofcode.com/2021/day/17) | [Click here](./day_17_-_/part_1.py) | [Click here](./day_17_-_/part_2.py) |
