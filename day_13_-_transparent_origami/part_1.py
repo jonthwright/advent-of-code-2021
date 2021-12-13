@@ -9,10 +9,10 @@ def solution(elements: list[tuple[int, int]], instructions: list[str]) -> int:
 	flip_direction, fold_target = instructions[0]
 
 	for x, y in origami.copy():
-		if flip_direction == 'x' and x >= fold_target:
+		if flip_direction == 'x' and x > fold_target:
 			origami.remove((x, y))
 			origami.add((fold_target * 2 - x, y))
-		if flip_direction == 'y' and y >= fold_target:
+		if flip_direction == 'y' and y > fold_target:
 			origami.remove((x, y))
 			origami.add((x, fold_target * 2 - y))
 
