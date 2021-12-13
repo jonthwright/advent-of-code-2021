@@ -1,33 +1,40 @@
 #!/usr/bin/env python3
 
 import os
+import operator
 
 
-def origami_points_stringified(origami: set[tuple[int, int]]) -> str:
-	xs = {x for x, _ in origami}
-	ys = {y for _, y in origami}
+def origami_code_word(origami: set[tuple[int, int]]) -> str:
+	min_x = min_y = float('inf')
+	max_x = max_y = 0
+
+	for points in origami:
+		min_x = min(points[0], min_x)
+		min_y = min(points[1], min_y)
+		max_x = max(points[0], max_x)
+		max_y = max(points[1], max_y)
 
 	origami_string = ''
 
-	for y in range(min(ys), max(ys) + 1):
-		origami_string += ''.join('#' if (x, y) in origami else ' ' for x in range(min(xs), max(xs) + 1))
-		origami_string += '\n'
+	for y in range(min_y, max_y + 1):
+		origami_string += ''.join('#' if (x, y) in origami else ' ' for x in range(min_x, max_x + 1))
+		origami_string += '\n' if y < max_y else ''
 
-	return origami_string[:len(origami_string) - 1]
+	return origami_string
 
 def solution(elements: list[tuple[int, int]], instructions: list[str]) -> str:
 	origami = set(elements)
 
 	for flip_direction, fold_target in instructions:
 		for x, y in origami.copy():
-			if flip_direction == 'x' and x >= fold_target:
+			if flip_direction == 'x' and x > fold_target:
 				origami.remove((x, y))
 				origami.add((fold_target * 2 - x, y))
-			if flip_direction == 'y' and y >= fold_target:
+			if flip_direction == 'y' and y > fold_target:
 				origami.remove((x, y))
 				origami.add((x, fold_target * 2 - y))
 
-	return origami_points_stringified(origami)
+	return origami_code_word(origami)
 
 
 def main():
