@@ -20,8 +20,8 @@ Completed the challenges primarily in Python.
 | **11** | [**_Dumbo Octopus_**](https://adventofcode.com/2021/day/11) | [Click here](./day_11_-_dumbo_octopus/part_1.py) | [Click here](./day_11_-_dumbo_octopus/part_2.py) |
 | **12** | [**_Passage Pathing_**](https://adventofcode.com/2021/day/12) | [Click here](./day_12_-_passage_pathing/part_1.py) | [Click here](./day_12_-_passage_pathing/part_2.py) |
 | **13** | [**_Transparent Origami_**](https://adventofcode.com/2021/day/13) | [Click here](./day_13_-_transparent_origami/part_1.py) | [Click here](./day_13_-_transparent_origami/part_2.py) |
-<!-- | **14** | [**_..._**](https://adventofcode.com/2021/day/14) | [Click here](./day_14_-_/part_1.py) | [Click here](./day_14_-_/part_2.py) |
-| **15** | [**_..._**](https://adventofcode.com/2021/day/15) | [Click here](./day_15_-_/part_1.py) | [Click here](./day_15_-_/part_2.py) |
+| **14** | [**_Extended Polymerisation_**](https://adventofcode.com/2021/day/14) | [Click here](./day_14_-_extended_polymerisation/part_1.py) | [Click here](./day_14_-_extended_polymerisation/part_2.py) |
+<!-- | **15** | [**_..._**](https://adventofcode.com/2021/day/15) | [Click here](./day_15_-_/part_1.py) | [Click here](./day_15_-_/part_2.py) |
 | **16** | [**_..._**](https://adventofcode.com/2021/day/16) | [Click here](./day_16_-_/part_1.py) | [Click here](./day_16_-_/part_2.py) |
 | **17** | [**_..._**](https://adventofcode.com/2021/day/17) | [Click here](./day_17_-_/part_1.py) | [Click here](./day_17_-_/part_2.py) |
 | **18** | [**_..._**](https://adventofcode.com/2021/day/18) | [Click here](./day_18_-_/part_1.py) | [Click here](./day_18_-_/part_2.py) |
