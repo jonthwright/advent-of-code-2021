@@ -17,7 +17,7 @@ def origami_code_word(origami: set[tuple[int, int]]) -> str:
 	origami_string = ''
 
 	for y in range(min_y, max_y + 1):
-		origami_string += ''.join('#' if (x, y) in origami else ' ' for x in range(min_x, max_x + 1))
+		origami_string += ''.join('█' if (x, y) in origami else ' ' for x in range(min_x, max_x + 1))
 		origami_string += '\n' if y < max_y else ''
 
 	return origami_string
