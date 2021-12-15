@@ -14,10 +14,10 @@ def generate_neighbours(x: int, y: int, width, height) -> Iterator[tuple[int, in
 
 def lowest_risk_path(chiton_risk_map: list[list[int]]) -> int | float:
 	width, height = len(chiton_risk_map[-1]), len(chiton_risk_map)
-	path_queue = [(0, 0, 0)]
+	risk_path_heap = [(0, 0, 0)]
 
-	while path_queue:
-		risk_score, x, y = hq.heappop(path_queue)
+	while risk_path_heap:
+		risk_score, x, y = hq.heappop(risk_path_heap)
 
 		if (x, y) == (width - 1, height - 1):
 			return risk_score
@@ -25,12 +25,12 @@ def lowest_risk_path(chiton_risk_map: list[list[int]]) -> int | float:
 		for dx, dy in generate_neighbours(x, y, width, height):
 			if chiton_risk_map[dy][dx] >= 0:
 				new_risk_score = risk_score + chiton_risk_map[dy][dx]
-				hq.heappush(path_queue, (new_risk_score, dx, dy))
+				hq.heappush(risk_path_heap, (new_risk_score, dx, dy))
 				chiton_risk_map[dy][dx] = -1
 
 	return float('inf')
 
-def expand_map(chiton_risk_map: list[list[int]], scale_factor: int = 5) -> None:
+def expand_chiton_risk_map(chiton_risk_map: list[list[int]], scale_factor: int = 5) -> None:
 	og_width, og_height = len(chiton_risk_map[0]), len(chiton_risk_map)
 
 	for sf in range(scale_factor - 1):
@@ -43,7 +43,7 @@ def expand_map(chiton_risk_map: list[list[int]], scale_factor: int = 5) -> None:
 				chiton_risk_map[y].append((chiton_risk_map[y][x + sf * og_width] % 9) + 1)
 
 def solution(elements: list[list[int]]) -> int | float:
-	expand_map(elements)
+	expand_chiton_risk_map(elements)
 	return lowest_risk_path(elements)
 
 

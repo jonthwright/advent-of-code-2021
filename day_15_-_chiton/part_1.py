@@ -1,34 +1,34 @@
 #!/usr/bin/env python3
 
 import os
+from collections import deque
+from typing import Iterator
+
+
+def generate_neighbours(x: int, y: int, width, height) -> Iterator[tuple[int, int]]:
+	for dx in range(-1, 2):
+		if 0 <= (new_x := x + dx) < width:
+			for dy in range(-1, 2):
+				if abs(dx) != abs(dy) and 0 <= (new_y := y + dy) < height: 
+					yield new_x, new_y
 
 
 def solution(elements: list[list[int]]) -> int:
 	end_point = (len(elements[-1]) - 1, len(elements) - 1)
 
-	path_stack = [end_point]
-	risk_map = {end_point : 0}
+	risk_path_queue = deque([end_point])
+	chiton_risk_map = {end_point : 0}
 
-	while path_stack:
-		x, y = path_stack.pop(0)
-		current_risk_score = risk_map[(x, y)] + elements[y][x]
+	while risk_path_queue:
+		x, y = risk_path_queue.popleft()
+		current_risk_score = chiton_risk_map[(x, y)] + elements[y][x]
 
-		for dy in range(-1, 2):
-			for dx in range(-1, 2):
-				if abs(dx) == abs(dy):
-					continue
+		for dx, dy in generate_neighbours(x, y, len(elements[y]), len(elements)):	
+			if (dx, dy) not in chiton_risk_map or chiton_risk_map[(dx, dy)] > current_risk_score:
+				risk_path_queue.append((dx, dy))
+				chiton_risk_map[(dx, dy)] = current_risk_score
 
-				dy += y
-				dx += x	
-
-				if not (0 <= dy < len(elements) and 0 <= dx < len(elements[y])):
-					continue
-	
-				if (dx, dy) not in risk_map or risk_map[(dx, dy)] > current_risk_score:
-					risk_map[(dx, dy)] = current_risk_score
-					path_stack.append((dx, dy))
-
-	return risk_map[(0, 0)]
+	return chiton_risk_map[(0, 0)]
 
 
 def main():
