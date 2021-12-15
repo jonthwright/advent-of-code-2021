@@ -17,18 +17,18 @@ def solution(elements: list[list[int]]) -> int:
 	end_point = (len(elements[-1]) - 1, len(elements) - 1)
 
 	risk_path_queue = deque([end_point])
-	chiton_risk_map = {end_point : 0}
+	chiton_risk_dict = {end_point : 0}
 
 	while risk_path_queue:
 		x, y = risk_path_queue.popleft()
-		current_risk_score = chiton_risk_map[(x, y)] + elements[y][x]
+		current_risk_score = chiton_risk_dict[(x, y)] + elements[y][x]
 
 		for dx, dy in generate_neighbours(x, y, len(elements[y]), len(elements)):	
-			if (dx, dy) not in chiton_risk_map or chiton_risk_map[(dx, dy)] > current_risk_score:
+			if (dx, dy) not in chiton_risk_dict or chiton_risk_dict[(dx, dy)] > current_risk_score:
 				risk_path_queue.append((dx, dy))
-				chiton_risk_map[(dx, dy)] = current_risk_score
+				chiton_risk_dict[(dx, dy)] = current_risk_score
 
-	return chiton_risk_map[(0, 0)]
+	return chiton_risk_dict[(0, 0)]
 
 
 def main():
