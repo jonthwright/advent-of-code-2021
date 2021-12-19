@@ -89,7 +89,7 @@ def main():
 	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		inputs = [line.strip() for line in f.readlines()]
 
-	print('Day 18 : Snailfishs - part 2')
+	print('Day 18 : Snailfish - part 2')
 	print(f'>>> Answer : {solution(inputs)}')
 
 if __name__ == '__main__':
