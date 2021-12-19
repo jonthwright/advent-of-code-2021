@@ -57,7 +57,7 @@ def solution(elements: str) -> int:
 	return decoded_packets
 
 def main():
-	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	aoc_day_loc = os.path.dirname(__file__)
 
 	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		inputs = f.readline().strip()

@@ -91,7 +91,7 @@ def solution(elements: list[str]) -> int:
 
 
 def main():
-	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	aoc_day_loc = os.path.dirname(__file__)
 
 	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		inputs = [row.strip() for row in f.readlines()]

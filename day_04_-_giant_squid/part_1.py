@@ -42,7 +42,7 @@ def solution(header: list[int], elements: list[list[int]]) -> int:
 
 
 def main():
-	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	aoc_day_loc = os.path.dirname(__file__)
 
 	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		input_header = [int(num) for num in f.readline().strip().split(',')]

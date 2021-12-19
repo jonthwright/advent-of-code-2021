@@ -20,7 +20,7 @@ def solution(elements: list[tuple[int, int]], instructions: list[str]) -> int:
 
 
 def main():
-	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	aoc_day_loc = os.path.dirname(__file__)
 
 	main_inputs, additional_inputs = [], []
 	main_input = True

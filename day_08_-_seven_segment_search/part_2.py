@@ -26,7 +26,7 @@ def solution(elements: list[tuple[list[str], list[str]]]) -> int:
 
 
 def main():
-	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
+	aoc_day_loc = os.path.dirname(__file__)
 
 	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		inputs = [tuple(split.split() for split in line.strip().split('|')) for line in f.readlines()]
