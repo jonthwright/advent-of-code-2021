@@ -49,7 +49,6 @@ def add_left(snailfish: Snailfishs, new: Snailfishs) -> Snailfishs:
 	left, right = snailfish
 	return [add_left(left, new), right]
 
-
 def add_right(snailfish: Snailfishs, new: Snailfishs) -> Snailfishs:
 	if new is None:
 		return snailfish
@@ -63,11 +62,12 @@ def add(left: Snailfishs, right: Snailfishs) -> Snailfishs:
 	snailfish = [left, right]
 
 	while True:
-		change, _, snailfish, _ = explode(snailfish)
-		if change:
+		changed, _, snailfish, _ = explode(snailfish)
+		if changed:
 			continue
-		change, snailfish = split(snailfish)
-		if not change:
+
+		changed, snailfish = split(snailfish)
+		if not changed:
 			break
 
 	return snailfish
