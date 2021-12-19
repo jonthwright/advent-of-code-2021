@@ -38,7 +38,7 @@ def solution(main_inputs: str, elements: list[str]) -> int:
 def main():
 	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
 
-	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
+	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		main_input, _, *inputs = [line.strip() for line in f.readlines()]
 		inputs = [line.split(' -> ') for line in inputs]
 

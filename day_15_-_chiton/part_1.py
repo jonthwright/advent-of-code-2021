@@ -33,8 +33,10 @@ def solution(elements: list[list[int]]) -> int:
 
 def main():
 	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
-	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
+
+	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		inputs = [[int(col) for col in row.strip()] for row in f.readlines()]
+
 	print('Day 15 : Chiton - part 1')
 	print(f'>>> Answer : {solution(inputs)}')
 

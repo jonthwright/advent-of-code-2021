@@ -19,8 +19,10 @@ def solution(elements: list[int]) -> int:
 
 def main():
 	aoc_day_loc = os.path.dirname(__file__).replace('\\', '/')
-	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
+
+	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		inputs = [int(line) for line in f.readline().strip().split(',')]
+
 	print('Day 07 : The Treachery of Whales - part 2')
 	print(f'>>> Answer : {solution(inputs)}')
 

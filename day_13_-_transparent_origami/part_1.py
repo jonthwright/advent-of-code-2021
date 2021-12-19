@@ -25,7 +25,7 @@ def main():
 	main_inputs, additional_inputs = [], []
 	main_input = True
 
-	with open(f'{aoc_day_loc}/input_file.txt', 'r') as f:
+	with open(os.path.join(aoc_day_loc, 'input_file.txt'), 'r') as f:
 		for line in f.readlines():
 			if line == '\n':
 				main_input = False
