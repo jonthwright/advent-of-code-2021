@@ -26,8 +26,8 @@ Completed the challenges primarily in Python.
 | **17** | [**_Trick Shot_**](https://adventofcode.com/2021/day/17) | [Click here](./day_17_-_trick_shot/part_1.py) | [Click here](./day_17_-_trick_shot/part_2.py) |
 | **18** | [**_Snailfish_**](https://adventofcode.com/2021/day/18) | [Click here](./day_18_-_snailfish/part_1.py) | [Click here](./day_18_-_snailfish/part_2.py) |
 | **19** | [**_Beacon Scanner_**](https://adventofcode.com/2021/day/19) | [Click here](./day_19_-_beacon_scanner/part_1.py) | [Click here](./day_19_-_beacon_scanner/part_2.py) |
-<!--| **20** | [**_..._**](https://adventofcode.com/2021/day/20) | [Click here](./day_20_-_/part_1.py) | [Click here](./day_20_-_/part_2.py) |
-| **21** | [**_..._**](https://adventofcode.com/2021/day/21) | [Click here](./day_21_-_/part_1.py) | [Click here](./day_21_-_/part_2.py) |
+| **20** | [**_Trench Map_**](https://adventofcode.com/2021/day/20) | [Click here](./day_20_-_trench_map/part_1.py) | [Click here](./day_20_-_trench_map/part_2.py) |
+<!-- | **21** | [**_..._**](https://adventofcode.com/2021/day/21) | [Click here](./day_21_-_/part_1.py) | [Click here](./day_21_-_/part_2.py) |
 | **22** | [**_..._**](https://adventofcode.com/2021/day/22) | [Click here](./day_22_-_/part_1.py) | [Click here](./day_22_-_/part_2.py) |
 | **23** | [**_..._**](https://adventofcode.com/2021/day/23) | [Click here](./day_23_-_/part_1.py) | [Click here](./day_23_-_/part_2.py) |
 | **24** | [**_..._**](https://adventofcode.com/2021/day/24) | [Click here](./day_24_-_/part_1.py) | [Click here](./day_24_-_/part_2.py) |
