@@ -27,11 +27,11 @@ Completed the challenges primarily in Python.
 | **18** | [**_Snailfish_**](https://adventofcode.com/2021/day/18) | [Click here](./day_18_-_snailfish/part_1.py) | [Click here](./day_18_-_snailfish/part_2.py) |
 | **19** | [**_Beacon Scanner_**](https://adventofcode.com/2021/day/19) | [Click here](./day_19_-_beacon_scanner/part_1.py) | [Click here](./day_19_-_beacon_scanner/part_2.py) |
 | **20** | [**_Trench Map_**](https://adventofcode.com/2021/day/20) | [Click here](./day_20_-_trench_map/part_1.py) | [Click here](./day_20_-_trench_map/part_2.py) |
-<!-- | **21** | [**_..._**](https://adventofcode.com/2021/day/21) | [Click here](./day_21_-_/part_1.py) | [Click here](./day_21_-_/part_2.py) |
-| **22** | [**_..._**](https://adventofcode.com/2021/day/22) | [Click here](./day_22_-_/part_1.py) | [Click here](./day_22_-_/part_2.py) |
-| **23** | [**_..._**](https://adventofcode.com/2021/day/23) | [Click here](./day_23_-_/part_1.py) | [Click here](./day_23_-_/part_2.py) |
-| **24** | [**_..._**](https://adventofcode.com/2021/day/24) | [Click here](./day_24_-_/part_1.py) | [Click here](./day_24_-_/part_2.py) |
-| **25 (final)** | [**_..._**](https://adventofcode.com/2021/day/25) | [Click here](./day_25_-_/part_1.py) | __*(None)*__ |-->
+| **21** | [**_Dirac Dice_**](https://adventofcode.com/2021/day/21) | [Click here](./day_21_-_dirac_dice/part_1.py) | [Click here](./day_21_-_dirac_dice/part_2.py) |
+| **22** | [**_Reactor Reboot_**](https://adventofcode.com/2021/day/22) | [Click here](./day_22_-_reactor_reboot/part_1.py) | [Click here](./day_22_-_reactor_reboot/part_2.py) |
+| **23** | [**_Amphipod_**](https://adventofcode.com/2021/day/23) | [Click here](./day_23_-_/part_1.py) | [Click here](./day_23_-_/part_2.py) |
+| **24** | [**_Arithmetic Logic Unit_**](https://adventofcode.com/2021/day/24) | [Click here](./day_24_-_arithmetic_logic_unit/part_1.py) | [Click here](./day_24_-_arithmetic_logic_unit_/part_2.py) |
+| **25 (final)** | [**_Sea Cucumber_**](https://adventofcode.com/2021/day/25) | [Click here](./day_25_-_sea_cucumber/part_1.py) | __*(None)*__ |
 
 # Map
 ![](./map.png?raw=true)
