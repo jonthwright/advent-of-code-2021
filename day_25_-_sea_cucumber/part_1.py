@@ -8,16 +8,16 @@ def sea_cucumber_movements(seafloor: dict[tuple[int, int], str], sea_cucumber_di
 	sea_cucumbers_moved = False
 	new_seafloor = {}
 
-	for position in seafloor:
-		if sea_cucumber_direction == seafloor[position]:
-			new_position = movement_key(*position)
-			if new_position not in seafloor:
+	for sea_cucumber in seafloor:
+		if sea_cucumber_direction == seafloor[sea_cucumber]:
+			new_sea_cucumber = movement_key(*sea_cucumber)
+			if new_sea_cucumber not in seafloor:
 				sea_cucumbers_moved = True
-				new_seafloor[new_position] = sea_cucumber_direction
+				new_seafloor[new_sea_cucumber] = sea_cucumber_direction
 			else:
-				new_seafloor[position] = sea_cucumber_direction
+				new_seafloor[sea_cucumber] = sea_cucumber_direction
 		else:
-			new_seafloor[position] = seafloor[position]
+			new_seafloor[sea_cucumber] = seafloor[sea_cucumber]
 
 	return sea_cucumbers_moved, new_seafloor
 
